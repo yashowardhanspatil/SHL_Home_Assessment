@@ -70,7 +70,6 @@ Returns simple health check:
 **Example Response:**
 ```json
 {
-  "refined_query": "Python, SQL, technical assessment under 45 minutes",
   "recommendations": [
     {
       "title": "CodeAbility – Python & SQL",
@@ -106,7 +105,7 @@ Return a short search query to find matching assessments.
 ├── retriever.py          # FAISS vector search
 ├── utils.py              # JD scraping & query refinement (Gemini)
 ├── generate_index.py     # Build FAISS index from catalog
-├── shli_products_cleaned.json          # SHL product catalog (pre-scraped)
+├── shl_products_cleaned.json          # SHL product catalog (pre-scraped)
 ├── faiss_index.index     # FAISS binary index
 ├── faiss_metadata.pkl    # Catalog metadata
 ├── requirements.txt
